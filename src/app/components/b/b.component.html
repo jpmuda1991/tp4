@@ -1,0 +1,13 @@
+<div class="main-container">
+    <mat-form-field appearance="fill" style="width:300px">
+        <mat-label>Fahrenheit</mat-label>
+        <input type="number" matInput min="0" max="9999999999" [(ngModel)]="_service.farToCel"
+            [value]="(_service.celToFar*1.8)+32">
+    </mat-form-field>
+    <h1>=</h1>
+    <mat-form-field appearance="fill" style="width:300px">
+        <mat-label>Celsius</mat-label>
+        <input type="number" matInput min="0" max="9999999999" [(ngModel)]="_service.celToFar"
+            [value]="0.55*(_service.farToCel-32)">
+    </mat-form-field>
+</div>

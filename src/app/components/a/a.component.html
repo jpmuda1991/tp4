@@ -1,0 +1,13 @@
+<div class="main-container">
+    <mat-form-field appearance="fill" style="width:300px">
+        <mat-label>Livre</mat-label>
+        <input type="number" matInput min="0" max="9999999999" [(ngModel)]="_service.poundsToKilogram"
+            [value]="_service.kilogramToPounds*2.2046">
+    </mat-form-field>
+    <h1>=</h1>
+    <mat-form-field appearance="fill" style="width:300px">
+        <mat-label>Kilogramm</mat-label>
+        <input type="number" matInput min="0" max="9999999999" [(ngModel)]="_service.kilogramToPounds"
+            [value]="_service.poundsToKilogram/2.2046">
+    </mat-form-field>
+</div>
